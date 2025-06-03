@@ -3,13 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yoga Bliss</title>
+  <title>Yoga Bliss | Online Studio | Instructors</title>
   <link 
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+    rel="stylesheet"/>
+
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<!-- animation -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<!-- owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <!-- icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+<!-- Keywords -->
+<meta name="keywords" content="Yoga Bliss,Yoga website, Yoga online class, best instructors, Yoga Schedule free trials, Raipur, Chhattisgarh,">
+<meta name="description" content="Best Online Yoga Practice which provides free trials with the best instructors in town.">
+
+<link rel="shortcut icon" href="photos/yogapose5.ico" type="image/x-icon">
 
   <style>
     body {
@@ -19,7 +37,7 @@
     }
 
     .navbar {
-      background-color:  #dfece6;
+      background-color: #dfece6;
     }
 
     .navbar-brand {
@@ -56,7 +74,23 @@
       object-fit: cover;
     }
 
-     .card-img-top {
+    .owl-carousel .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .owl-carousel img {
+      border-radius: 15px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .owl-carousel img:hover {
+      transform: scale(1.1);
+    }
+
+
+    .card-img-top {
       height: 200px;
       object-fit: cover;
     }
@@ -70,6 +104,94 @@
     .card:hover {
       transform: scale(1.03);
     }
+
+    /* hover image */
+    /* .card-img-top {
+      transition: transform 0.3s ease-in-out;
+    }
+    .card:hover .card-img-top {
+      transform: scale(1.05);
+    } */
+
+  /* Class Schedule Table */
+    .table thead {
+      background-color: #4a7c59;
+      color: white;
+    }
+
+    .table tbody tr {
+      background-color: #fff;
+    }
+
+    .table tbody tr:hover {
+      background-color: #e8f5e9;
+    }
+
+    .table td, .table th {
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    .table-responsive {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    /* Modal for Contact Us */
+    .modal-content {
+      background-color: #f0f8f6;
+      border-radius: 8px;
+      padding: 30px;
+    }
+
+    .modal-header {
+      border-bottom: none;
+    }
+
+    .modal-title {
+      color: #4a7c59;
+      font-weight: bold;
+    }
+
+    .modal-body {
+      color: #555;
+    }
+
+    .modal-footer button {
+      background-color: #4a7c59;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    .modal-footer button:hover {
+      background-color: #366e47;
+    }
+
+    /* pagination */
+    .pagination {
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .page-item .page-link {
+      border: 2px solid #cd6ca8;
+      padding: 8px 16px;
+      color: #c487d3;
+    }
+
+    .page-item.active .page-link {
+      background-color: #99c8e7;
+      color: white;
+    }
+
+    .page-link:hover {
+      background-color: #0bc0e4;
+      color: white;
+    }
+
 
     .info-section {
       padding: 60px 0;
@@ -88,8 +210,8 @@
       text-align: center;
       color: #4a7c59;
     }
-    
-      .card-img-top {
+
+    .card-img-top {
       height: 200px;
       object-fit: cover;
 }
@@ -102,13 +224,14 @@
     .card:hover {
       transform: scale(1.03);
 }
+
   </style>
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg px-4">
-    <a class="navbar-brand d-flex align-items-center" href="#">
+  <a class="navbar-brand d-flex align-items-center" href="#">
     <img src="photos/images.png" alt="Logo">
     Yoga Bliss
   </a>
@@ -125,9 +248,17 @@
   </div>
 </nav>
 
-<!-- Carousel -->
+<!-- Welcome with Animation -->
+<div class="container text-center my-5">
+  <h2 class="animate__animated animate__fadeIn">Welcome to Yoga Bliss</h2>
+  <p class="lead animate__animated animate__fadeIn">
+    Find your inner peace, balance, and strength through our yoga practices.
+  </p>
+</div>
+
+<!-- CAROUSEL -->
 <div id="yogaCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
+    <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -193,19 +324,7 @@
   </div>
 </div>
 
-<!-- Two Images in One Division -->
-<div class="container my-5">
-  <div class="row g-4">
-    <div class="col-md-6">
-      <img src="photos/yogapose5.jpg" class="img-fluid rounded shadow-sm" alt="Yoga in Nature" style="height: 350px; width: 100%; object-fit: cover;">
-    </div>
-    <div class="col-md-6">
-      <img src="photos/yogapose6.jpg" class="img-fluid rounded shadow-sm" alt="Sunset Yoga Practice" style="height: 350px; width: 100%; object-fit: cover;">
-    </div>
-  </div>
-</div>
-
-<!-- Text Left / Image Right Section -->
+<!-- Section (Text Left / Image Right) -->
 <div class="container info-section">
   <div class="row align-items-center">
     <div class="col-md-6">
@@ -222,30 +341,242 @@
     </div>
   </div>
 </div>
-  
-<!-- Footer -->
+
+<!-- Owl Carousel -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Featured Yoga Poses</h2>
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <img src="photos/yoga 11.jpg" class="img-fluid" alt="Yoga Pose 1">
+    </div>
+    <div class="item">
+      <img src="photos/yoga 12.avif" class="img-fluid" alt="Yoga Pose 2">
+    </div>
+    <div class="item">
+      <img src="photos/yoga 13.avif" class="img-fluid" alt="Yoga Pose 3">
+    </div>
+    <div class="item">
+      <img src="photos/yoga 14.jpg " class="img-fluid" alt="Yoga Pose 4">
+    </div>
+    <div class="item">
+      <img src="photos/yoga 15.avif" class="img-fluid" alt="Yoga Pose 5">
+    </div>
+  </div>
+</div>
+
+<!-- Pagination Section -->
+<div class="container my-4">
+  <h2 class="text-center mb-4">Our Yoga Classes</h2>
+  <ul class="list-group mb-4">
+    <li class="list-group-item">Vinyasa Yoga</li>
+    <li class="list-group-item">Hatha Yoga</li>
+    <li class="list-group-item">Power Yoga</li>
+    <li class="list-group-item">Ashtanga Yoga</li>
+    <li class="list-group-item">Restorative Yoga</li>
+  </ul>
+
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <span class="page-link">Previous</span>
+      </li>
+      <li class="page-item active">
+        <span class="page-link">1</span>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">3</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+
+<!-- Class Schedule Section -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Class Schedule</h2>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Class Type</th>
+          <th>Time</th>
+          <th>Instructor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>Vinyasa Flow</td>
+          <td>8:00 AM</td>
+          <td>Astha</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>Beginner Yoga</td>
+          <td>6:00 PM</td>
+          <td>Ishan</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Power Yoga</td>
+          <td>9:00 AM</td>
+          <td>Vatsala</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>Restorative Yoga</td>
+          <td>7:00 PM</td>
+          <td>Swati</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Ashtanga</td>
+          <td>8:00 AM</td>
+          <td>Karan</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="photos/yogapose6.jpg" alt="">
+        <div class="overlay">
+           <h2>Tips and tricks</h2>
+           <a class="info" href="#">Here</a>
+        </div>
+    </div>
+</div> -->
+
+
+<!-- Two Images Side by Side -->
+<div class="container my-5">
+  <div class="row g-4">
+    <div class="col-md-6">
+      <img src="photos/yogapose5.jpg" class="img-fluid rounded shadow-sm" alt="Yoga in Nature" style="height: 350px; width: 100%; object-fit: cover;">
+    </div>
+    <div class="col-md-6">
+      <img src="photos/yogapose6.jpg" class="img-fluid rounded shadow-sm" alt="Sunset Yoga Practice" style="height: 350px; width: 100%; object-fit: cover;">
+    </div>
+  </div>
+</div>
+
+<!-- Contact Us Section -->
+<!-- Modal Trigger Button -->
+<div class="container my-5 text-center">
+  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#contactModal">
+    Contact Us
+  </button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Get in Touch</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="modalName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="modalName" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <label for="modalEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="modalEmail" placeholder="Your Email">
+          </div>
+          <div class="mb-3">
+            <label for="modalMessage" class="form-label">Message</label>
+            <textarea class="form-control" id="modalMessage" rows="3" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- owl carousel -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      autoplay: true,
+      autoplaySpeed: 250,
+      margin:10,
+      nav: true,
+      responsive:{
+        0:{items:1},
+        600:{items:2},
+        1000:{items:3}
+      }
+    });
+  });
+</script>
+
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
-    <p>&copy; 2025 Yoga Bliss. All rights reserved. | Follow us on 
-      <a href="#">Instagram</a>, 
-      <a href="#">Facebook</a>, 
-      <a href="#">Twitter</a>
-    </p>
+  
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <h5>About Yoga Bliss</h5>
+        <p>At Yoga Bliss, we offer a variety of yoga practices to nurture your body and mind. Our classes cater to all levels, helping you grow stronger, more flexible, and find balance in your life.</p>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Classes</a></li>
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">Instructors</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Contact Us</h5>
+        <ul>
+          <li>Email: info@yogabliss.com</li>
+          <li>Phone: +91 7890123456</li>
+          <li><a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Send us a message</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Icons -->
+    <div class="row mb-4">
+      <div class="col text-center">
+        <h5>Follow Us</h5>
+        <a href="#" ><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="#" ><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#" ><i class="fab fa-twitter fa-2x"></i></a>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col">
+        <p>2025 Yoga Bliss. All rights reserved.</p>
+      </div>
+    </div>
   </div>
 </footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
